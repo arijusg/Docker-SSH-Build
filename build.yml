@@ -1,0 +1,13 @@
+build:
+  version: 2016-03-14 # version of the build schema.
+  steps:
+    builder:
+      name: docker-ssh-image
+      dockerfile: Dockerfile
+      secrets:
+          id_rsa:
+            type: file
+            value: _env(HOME)/.ssh/id_rsa
+      cleanup:
+        commands:
+          - rm -rf ~/.ssh/
