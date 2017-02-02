@@ -10,3 +10,13 @@ sudo bash build.sh
 ```
 docker run -ti --rm docker-ssh-image /bin/bash
 ```
+
+## Save docker image locally
+```
+docker save -o <save image to path> <image name>
+```
+## Load docker image locally
+```
+docker load -i <path to image tar file>
+```
+
