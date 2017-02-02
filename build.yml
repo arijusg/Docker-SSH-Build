@@ -10,4 +10,4 @@ build:
             value: _env(HOME)/.ssh/id_rsa
       cleanup:
         commands:
-          - rm -rf ~/.ssh/
+          - rm -rf /root/.ssh/
